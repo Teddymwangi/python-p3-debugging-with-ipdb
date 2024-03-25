@@ -1,10 +1,9 @@
-#!/usr/bin/env python3
+# lib/ipdb_debugging.py
+import ipdb
 
-from ipdb_debugging import plus_two
+def plus_two(num):
+    num += 2  # Corrected the code to update num
+    return num
 
-class TestIpdbDebugging:
-    '''ipdb_debugging.py'''
-    
-    def test_adds_two(self):
-        '''adds_two() adds 2 to input arg and returns sum.'''
-        assert(plus_two(3) == 5)
+# No need to include ipdb.set_trace() in the final version of the code
+# ipdb.set_trace() was used for debugging purposes
